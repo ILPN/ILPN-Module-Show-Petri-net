@@ -7,6 +7,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {APP_BASE_HREF, PlatformLocation} from '@angular/common';
+import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
     declarations: [
@@ -19,6 +20,7 @@ import {APP_BASE_HREF, PlatformLocation} from '@angular/common';
         ReactiveFormsModule,
         MatSlideToggleModule,
         BrowserAnimationsModule,
+        AppRoutingModule,
     ],
     providers: [
         {
