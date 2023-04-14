@@ -2,8 +2,11 @@
     <h2>TODO title</h2>
     <hr>
 
-    <div fxLayout="row wrap" fxLayoutAlign="space-evenly start">
+    <ilpn-pn-display [petriNet$]="net$" [height]="svgHeight" [ngStyle]="{height: svgHeight}"></ilpn-pn-display>
 
+    <hr>
+    <div fxLayout="row wrap" fxLayoutAlign="space-evenly start">
+        <ilpn-file-upload [fileDisplay]="FD_PN" (fileContent)="onNetUpload($event)"></ilpn-file-upload>
     </div>
 
 </ilpn-page-layout>
