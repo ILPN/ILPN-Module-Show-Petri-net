@@ -3,9 +3,9 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from './app.component';
 import {
     IlpnComponentsModule,
-    PetriNetLayoutService,
+    PetriNetLayoutManagerFactoryService,
     PnDisplayModule,
-    SpringEmbedderLayoutService
+    SpringEmbedderLayoutManagerFactoryService,
 } from 'ilpn-components';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {ReactiveFormsModule} from '@angular/forms';
@@ -35,8 +35,8 @@ import {AppRoutingModule} from "./app-routing.module";
             deps: [PlatformLocation]
         },
         {
-            provide: PetriNetLayoutService,
-            useExisting: SpringEmbedderLayoutService,
+            provide: PetriNetLayoutManagerFactoryService,
+            useExisting: SpringEmbedderLayoutManagerFactoryService,
         }
     ],
     bootstrap: [AppComponent]
